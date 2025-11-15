@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Netflix Clone</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: #141414;
+      color: #fff;
+    }
+    .navbar {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      background: rgba(0,0,0,0.7);
+    }
+    .logo {
+      width: 120px;
+    }
+    .nav-links {
+      margin-left: auto;
+      display: flex;
+      gap: 20px;
+    }
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+    }
+    .hero {
+      position: relative;
+      background: url('https://assets.nflxext.com/ffe/siteui/vlv3/8eebd103-a2fa-4f25-b4d6-aa196c63d4a7/f317e630-5bf9-44f4-a758-62e4d8f2c3e2/IN-en-20230925-popsignuptwoweeks-perspective_alpha_website_large.jpg') center/cover no-repeat;
+      height: 450px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 50px;
+    }
+    .hero-content {
+      max-width: 400px;
+    }
+    .hero-title {
+      font-size: 3em;
+      font-weight: 900;
+      margin: 0 0 20px;
+    }
+    .hero-desc {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+    .hero-btn {
+      padding: 12px 28px;
+      font-size: 1.1em;
+      background: #e50914;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: 700;
+    }
+    .section {
+      padding: 40px 5%;
+    }
+    .row {
+      margin-bottom: 25px;
+    }
+    .row-title {
+      font-size: 1.4em;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+    .row-posters {
+      display: flex;
+      gap: 14px;
+      overflow-x: auto;
+    }
+    .row-posters img {
+      width: 180px;
+      border-radius: 4px;
+      transition: transform .2s;
+      cursor: pointer;
+    }
+    .row-posters img:hover {
+      transform: scale(1.09);
+    }
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #777;
+      font-size: 0.95em;
+      background: #111;
+    }
+    ::-webkit-scrollbar {
+      width: 6px;
+      background: #232323;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #444;
+      border-radius: 5px;
+    }
+    @media (max-width: 700px) {
+      .hero { height: 270px; padding-left: 10px;}
+      .hero-title {font-size: 2em;}
+      .row-posters img { width: 100px; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png" alt="Netflix Logo">
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">TV Shows</a>
+      <a href="#">Movies</a>
+      <a href="#">My List</a>
+      <a href="#">Sign In</a>
+    </div>
+  </nav>
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-title">Unlimited movies, TV shows and more.</div>
+      <div class="hero-desc">Watch anywhere. Cancel anytime. Ready to watch? Click the button below to get started.</div>
+      <button class="hero-btn">Get Started</button>
+    </div>
+  </section>
+  <div class="section">
+    <div class="row">
+      <div class="row-title">Trending Now</div>
+      <div class="row-posters">
+        <img src="https://m.media-amazon.com/images/I/71NIqeQyoEL._AC_SL1500_.jpg" alt="Trending Show 1">
+        <img src="https://m.media-amazon.com/images/I/91FA4u3pA2L._AC_SL1500_.jpg" alt="Trending Show 2">
+        <img src="https://m.media-amazon.com/images/I/811GxttDxiL._AC_SL1500_.jpg" alt="Trending Show 3">
+      </div>
+    </div>
+    <div class="row">
+      <div class="row-title">Top Picks for You</div>
+      <div class="row-posters">
+        <img src="https://m.media-amazon.com/images/I/71niXI3lxlL._AC_SL1100_.jpg" alt="Top Pick 1">
+        <img src="https://m.media-amazon.com/images/I/81kA9JLkPtL._AC_SL1500_.jpg" alt="Top Pick 2">
+        <img src="https://m.media-amazon.com/images/I/91bOyATbGQL._AC_SL1500_.jpg" alt="Top Pick 3">
+      </div>
+    </div>
+  </div>
+  <footer>
+    Netflix Clone &copy; 2025. Created for learning purposes.
+  </footer>
+</body>
+</html>
